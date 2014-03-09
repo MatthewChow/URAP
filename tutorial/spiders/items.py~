@@ -1,0 +1,73 @@
+# Define here the models for your scraped items
+#
+# See documentation in:
+# http://doc.scrapy.org/en/latest/topics/items.html
+
+from scrapy.item import Item, Field
+
+class LeaflyItem(Item):
+    name = Field()
+    street = Field()
+    city = Field()
+    state = Field()
+    zipcode = Field()
+    followers = Field()
+    numReviews = Field()
+    avgReview = Field()
+        
+"""
+    scrape_date = Field()
+    scrape_time = Field()
+    website = Field()
+    strain_name = Field()
+    strain_type = Field()
+    strain_highlights = Field()
+    avg_rating = Field()
+    num_of_review = Field()
+    flavor_one = Field()
+    flavor_two = Field()
+    flavor_three = Field()
+    effect_one = Field()
+    effect_one_score = Field()
+    effect_two = Field()
+    effect_two_score = Field()
+    effect_three = Field()
+    effect_three_score = Field()
+    effect_four = Field()
+    effect_four_score = Field()
+    effect_five = Field()
+    effect_five_score = Field()
+    medical_one = Field()
+    medical_one_score = Field()
+    medical_two = Field()
+    medical_two_score = Field()
+    medical_three = Field()
+    medical_three_score = Field()
+    medical_four = Field()
+    medical_four_score = Field()
+    medical_five = Field()
+    medical_five_score = Field()
+    negative_one = Field()
+    negative_one_score = Field()
+    negative_two = Field()
+    negative_two_score = Field()
+    negative_three = Field()
+    negative_three_score = Field()
+    negative_four = Field()
+    negative_four_score = Field()
+    negative_five = Field()
+    negative_five_score = Field()
+    most_popular_one = Field()
+    most_popular_two = Field()
+    most_popular_three = Field()
+    most_popular_four = Field()
+    most_popular_five = Field()
+    most_popular_six = Field()
+    most_popular_seven = Field()
+    most_popular_eight = Field()
+    most_popular_nine = Field()
+    most_popular_ten = Field()
+"""
+
+    
+    

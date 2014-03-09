@@ -1,0 +1,27 @@
+from scrapy.spider import Spider
+from scrapy.selector import Selector
+
+class LeaflySpider(Spider):
+    name = "leafly"
+    allowed_domains = ["leafly.com"]
+    start_urls = [
+        "http://www.leafly.com/dispensary-info/berkeley-patients-group"
+    ]
+
+    def parse(self, response):
+        sel = Selector(response)
+        item = LeaflyItem()
+        item.name = sel.xpath('//itemprop[@itemprop="name"]/text()').extract()
+        return item
+        #sel.xpath('//span[@itemprop="street-address"]/text()').extract()
+        """
+	sites = sel.xpath('//ul/li')
+        for site in sites:
+            title = site.xpath('a/text()').extract()
+            link = site.xpath('a/@href').extract()
+            desc = site.xpath('text()').extract()
+            print title, link, desc
+	"""
+	# strain_name = sel.xpath('//
+
+
